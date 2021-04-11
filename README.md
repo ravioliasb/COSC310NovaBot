@@ -45,26 +45,39 @@ You will need to download and install NLTK and Spacy in your python IDE before u
 # Capabilities
 
 - Nova utilizes natural language processing and pattern matching effectively so the user input does not have to match the predefined questions exactly to get an accurate response
-  - `Input: what is nuclear fusion?`
+  - `You: what is nuclear fusion?`
   - `Nova: It is a processes by which the Sun fuses hydrogen atoms to form helium`
-  - `Input: nuclear fusion`
+  - `You: nuclear fusion`
   - `Nova: It is a processes by which the Sun fuses hydrogen atoms to form helium`
-  - `Input: what is the capital of Canada?'
+  - `You: what is the capital of Canada?'
   - `Nova: Ottawa`
 - Nova cover a wide range of topics in astronomy, astrophysics and geography
 - Nova is easy to refactor and reuse since its structure is very basic. The corpus.txt can be modified to suit any topic of interest
 - Nova can recognize inputs even if they have simple spelling errors
-  - `Input: what s the capitall pf jamaica?`
+  - `You: what s the capitall pf jamaica?`
   - `Nova: Kingston`
 - Nova can recognize user inputs even if they contain special characters 
-  - `Input: what i$ the c@pital of India?`
+  - `You: what i$ the c@pital of India?`
   - `Nova: New Delhi`
 - Nova can recognize the parts of speech of words in the user input
-  - `Input: what is a white dwarf?`
+  - `You: what is a white dwarf?`
   - `Nova: Parts of Speech:  [('white', 'JJ'), ('dwarf', 'NN')]`
 - Nova recognizes synonyms of the word "bye" and uses them to find out when the user is done asking questions
 - Nova can display Wikipedia summaries when the user types "Wikipedia: " then their topic of choice
 - Nova can communicate with Wolfram Alpha when the user types "Wolfram: " then their query
+  - `You: wolfram: Rigel`
+  - ```
+    Nova: distance from Earth | 870.4 ly
+    apparent magnitude | +0.18 (easily visible to the naked eye)`
+    absolute magnitude | -6.95 (visual)`
+    spectral class | B8Ia (supergiant)`
+    effective temperature | 12000 K
+    mass | 5.3×10^31 kg
+    27 M_☉
+    main sequence lifetime | 2.7 million yr
+    end state | black hole
+    Bayer name | β Orionis (Beta Orionis)
+    ```
 - Nova will display a description of NASA's Picture of the Day through her GUI and will display the picture in the user's browser when the user types "Picture of the Day"
 
 # Limitations
