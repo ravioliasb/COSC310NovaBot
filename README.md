@@ -45,12 +45,16 @@ You will need to download and install NLTK and Spacy in your python IDE before u
 # Capabilities
 
 - Nova utilizes natural language processing and pattern matching effectively so the user input does not have to match the predefined questions exactly to get an accurate response
-  - `You: what is nuclear fusion?`
-  - `Nova: It is a processes by which the Sun fuses hydrogen atoms to form helium`
-  - `You: nuclear fusion`
-  - `Nova: It is a processes by which the Sun fuses hydrogen atoms to form helium`
-  - `You: what is the capital of Canada?'
-  - `Nova: Ottawa`
+   ```
+    You: what is nuclear fusion?
+    Nova: It is a processes by which the Sun fuses hydrogen atoms to form helium
+    You: nuclear fusion
+    Nova: It is a processes by which the Sun fuses hydrogen atoms to form helium
+   ```
+   ```
+    You: what is the capital of Canada?'
+    Nova: Ottawa`
+   ```
 - Nova cover a wide range of topics in astronomy, astrophysics and geography
 - Nova is easy to refactor and reuse since its structure is very basic. The corpus.txt can be modified to suit any topic of interest
 - Nova can recognize inputs even if they have simple spelling errors
@@ -65,12 +69,12 @@ You will need to download and install NLTK and Spacy in your python IDE before u
 - Nova recognizes synonyms of the word "bye" and uses them to find out when the user is done asking questions
 - Nova can display Wikipedia summaries when the user types "Wikipedia: " then their topic of choice
 - Nova can communicate with Wolfram Alpha when the user types "Wolfram: " then their query
-  - `You: wolfram: Rigel`
-  - ```
+    ```
+    You: wolfram: Rigel
     Nova: distance from Earth | 870.4 ly
-    apparent magnitude | +0.18 (easily visible to the naked eye)`
-    absolute magnitude | -6.95 (visual)`
-    spectral class | B8Ia (supergiant)`
+    apparent magnitude | +0.18 (easily visible to the naked eye)
+    absolute magnitude | -6.95 (visual)
+    spectral class | B8Ia (supergiant)
     effective temperature | 12000 K
     mass | 5.3×10^31 kg
     27 M_☉
