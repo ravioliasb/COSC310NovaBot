@@ -12,6 +12,6 @@ def wolframSearch(input):
         ask_wolfram = client.query(ask_wolfram)
         answer = next(ask_wolfram.results).text
     except:
-        answer = "Try a different word"
+        answer = "Wolfram could not answer the query"
 
     return answer
