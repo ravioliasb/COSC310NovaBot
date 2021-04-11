@@ -14,6 +14,6 @@ def wikiSearch(input):
     try:
         ask_wiki = wikipedia.summary(ask_wiki)
     except:
-        ask_wiki = "Try a different word"
+        ask_wiki = "Wikipedia could not provide a summary"
 
     return ask_wiki
