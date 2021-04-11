@@ -21,7 +21,9 @@ You will need to download and install NLTK and Spacy in your python IDE before u
 - `pip install -U spacy`
 - `python -m spacy download en_core_web_lg`
 - `pip install pyspellchecker`
-- `pip install wolframalpha
+- `pip install wolframalpha`
+- `pip install python-nasa-api`
+- `pip install wikipedia`
 
 # Sections
 
