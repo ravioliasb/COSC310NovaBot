@@ -83,20 +83,23 @@ You will need to download and install NLTK and Spacy in your python IDE before u
 Two districts make up the central area of Kingston: the historic Downtown, and New Kingston. Both are served by Norman Manley International Airport and also by the smaller and primarily domestic Tinson Pen Aerodrome.
 - Nova can communicate with Wolfram Alpha when the user types "Wolfram: " then their query
     ```
-    You: wolfram: Rigel
-    Nova: distance from Earth | 870.4 ly
-    apparent magnitude | +0.18 (easily visible to the naked eye)
-    absolute magnitude | -6.95 (visual)
-    spectral class | B8Ia (supergiant)
-    effective temperature | 12000 K
-    mass | 5.3×10^31 kg
-    27 M_☉
-    main sequence lifetime | 2.7 million yr
-    end state | black hole
-    Bayer name | β Orionis (Beta Orionis)
+     You: wolfram: Rigel
+     Nova: distance from Earth | 870.4 ly
+     apparent magnitude | +0.18 (easily visible to the naked eye)
+     absolute magnitude | -6.95 (visual)
+     spectral class | B8Ia (supergiant)
+     effective temperature | 12000 K
+     mass | 5.3×10^31 kg
+     27 M_☉
+     main sequence lifetime | 2.7 million yr
+     end state | black hole
+     Bayer name | β Orionis (Beta Orionis)
     ```
 - Nova will display a description of NASA's Picture of the Day through her GUI and will display the picture in the user's browser when the user types "Picture of the Day"
-
+    ```
+      You: picture of the day
+      Nova: Simulating Extreme SpacetimesWhat happens when two black holes collide? This extreme scenario occurs in the centers of many merging galaxies and multiple star systems. The featured video shows a computer animation of the final stages of such a merger, while highlighting the gravitational lensing effects that would appear on a background starfield. The black regions indicate the event horizons of the dynamic duo, while a surrounding ring of shifting background stars indicates the position of their combined Einstein ring. All background stars not only have images visible outside of this Einstein ring, but also have one or more companion images visible on the inside. Eventually the two black holes coalesce.  The end stages of such a merger is now known to produce a strong blast of gravitational radiation, providing a new way to see our universe.    This Week is: Black Hole Week at NASA
+    ```
 # Limitations
 
 - Nova can take a while to process user input and output the correct responses since there is a lot of conversion and formatting to be done. The processing time could be lowered by using more efficient functions.
