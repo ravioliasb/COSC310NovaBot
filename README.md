@@ -58,14 +58,19 @@ You will need to download and install NLTK and Spacy in your python IDE before u
 - Nova cover a wide range of topics in astronomy, astrophysics and geography
 - Nova is easy to refactor and reuse since its structure is very basic. The corpus.txt can be modified to suit any topic of interest
 - Nova can recognize inputs even if they have simple spelling errors
-  - `You: what s the capitall pf jamaica?`
-  - `Nova: Kingston`
+   ```
+    You: what s the capitall pf jamaica?`
+    Nova: Kingston`
+   ```
 - Nova can recognize user inputs even if they contain special characters 
-  - `You: what i$ the c@pital of India?`
-  - `Nova: New Delhi`
+   ```
+    You: what i$ the c@pital of India?
+    Nova: New Delhi
+   ```
 - Nova can recognize the parts of speech of words in the user input
-  - `You: what is a white dwarf?`
-  - `Nova: Parts of Speech:  [('white', 'JJ'), ('dwarf', 'NN')]`
+   ```
+    You: what is a white dwarf?
+    Nova: Parts of Speech:  [('white', 'JJ'), ('dwarf', 'NN')]
 - Nova recognizes synonyms of the word "bye" and uses them to find out when the user is done asking questions
 - Nova can display Wikipedia summaries when the user types "Wikipedia: " then their topic of choice
 - Nova can communicate with Wolfram Alpha when the user types "Wolfram: " then their query
