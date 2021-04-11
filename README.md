@@ -36,6 +36,9 @@ You will need to download and install NLTK and Spacy in your python IDE before u
 - **Processor**: This section takes the preprocessed data and tries to match it with its accurate response
 - **Main**: This section introduces the user, takes their input, generates the GUI, and manages how the program executes 
 - **norm_punc**: This section was taken from the Phrasal library. It normalizes sentences by removing elements such as special characters, extra spaces and apostrophes. 
+- **Wikipedia_Api**: This section takes user input, searches for the topic on the Wikipedia database and returns a summary of the topic
+- **Wolfram_Api**: This section takes queries from the user and returns the response from Wolfram Alpha's database
+- **NASA_API**: This section returns a summary of NASA's Picture of the Day and opens that picture on the user's browser
 
 `Corpus` --> `Preprocessor` --> `Processor` --> `Main`
 
