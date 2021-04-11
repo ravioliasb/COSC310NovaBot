@@ -93,8 +93,10 @@ You will need to download and install NLTK and Spacy in your python IDE before u
 
 - Nova can take a while to process user input and output the correct responses since there is a lot of conversion and formatting to be done. The processing time could be lowered by using more efficient functions.
 - Nova is somewhat limited to the predefined questions and responses in the corpus.txt. The corpus.txt will have to be expanded to allow Nova to answer more questions.
-  - `Input: what is a megabyte?`
-  - `Nova: I do not understand your question`
+    ```
+     Input: what is a megabyte?
+     Nova: I do not understand your question
+    ``` 
 - Preprocessing, such as spell checking, was not implemented for Wikipedia, Wolfram and NASA APIs since these features are meant for advanced users
 
 # New Features 
