@@ -3,7 +3,7 @@
 
 # Project Description
 
-Nova is a chatbot that is passionate about teaching astronomy and geography to users. Her implementation of natural language processing in python allows her to understand and answer user questions related to astronomy such as stars, galaxies, black holes and planets, and questions related to geography such as country capitals and geographical records. She was created with the intent to spread basic knowledge about astronomy and geography to individuals who are interested in these fields. 
+Nova is a chatbot that is passionate about teaching astronomy and geography to users. Her implementation of natural language processing in python allows her to understand and answer user questions related to astronomy such as stars, galaxies, black holes and planets, and questions related to geography such as country capitals and geographical records. She is also equipped with Wikipedia, Wolfram and NASA APIs for users who wish to get more detailed information on topics. She was created with the intent to spread basic knowledge about astronomy and geography to individuals who are interested in these fields. 
 
 # Software Development Life Cycle
 
@@ -12,6 +12,10 @@ We chose to use the incremental development life cycle. This life cycle is ideal
 # How does Nova work?
 
 Nova was developed in python and uses natural language processing to understand and converse with the user. She takes the input from the user and cleans the sentences into a condensed and easily-readable format. She then compares the input to the questions she has in her questionbank and gives a response based on the similarity between the input and questionbank questions. All the questions and responses are found inside the corpus.txt file and may be expanded or changed as more astronomy or geography questions are thought of. 
+
+# Software Design
+
+NovaBot was created in the Python language through PyCharm. We used several libraries including nltk, spacy and pyspellchecker to correct, format and clean user input so that NovaBot would be able to recognize and match it to the appropriate responses in the databank. We also used the Wikipedia and Wolfram APIs to allow users to conduct more advanced searches on topics. Lastly, the NASA API was implemented so that users could view the NASA's astronomical Picture of the Day. 
 
 # Requirements
 
@@ -56,6 +60,9 @@ You will need to download and install NLTK and Spacy in your python IDE before u
   - `Input: what is a white dwarf?`
   - `Nova: Parts of Speech:  [('white', 'JJ'), ('dwarf', 'NN')]`
 - Nova recognizes synonyms of the word "bye" and uses them to find out when the user is done asking questions
+- Nova can display Wikipedia summaries when the user types "Wikipedia: " then their topic of choice
+- Nova can communicate with Wolfram Alpha when the user types "Wolfram: " then their query
+- Nova will display a description of NASA's Picture of the Day through her GUI and will display the picture in the user's browser when the user types "Picture of the Day"
 
 # Limitations
 
@@ -63,13 +70,10 @@ You will need to download and install NLTK and Spacy in your python IDE before u
 - Nova is somewhat limited to the predefined questions and responses in the corpus.txt. The corpus.txt will have to be expanded to allow Nova to answer more questions.
   - `Input: what is a megabyte?`
   - `Nova: I do not understand your question`
+- Preprocessing, such as spell checking, was not implemented for Wikipedia, Wolfram and NASA APIs since these features are meant for advanced users
 
 # New Features 
 
-- Added a GUI to make the NovaBot more user friendly. This is an improvement because the user had to previously view all the logs that were displayed on the console.
-- Added a new topic. Geography was chosen as the new topic since it seemed like the closest topic to astronomy. The addition of the new topic opens up a lot more conversations between the user and NovaBot. 
-- Added a feature that gives five different responses if NovaBot does not recognize the question. This feature makes NovaBot seem more realistic since she no longer gives the same answer to every unrecognized question
-- Added a feature to correct spelling. This was a very important addition since previously, NovaBot would fail to recognize user input even if it had simple spelling errors. Now the user will not have to worry about minor spelling errors since NovaBot will correct spelling automatically.
-- Added synonym recognition. NovaBot now will close whenever a user inputs synonyms of the word "bye". Previously, the user could only terminate the program is they typed the word "goodbye" so this addition allows them more flexibility.
-- Added POS-tagging. This feature was to be used to extract words that seemed unnecessary during the preprocessing. However, the feature was not used since the alternative NLP tools that we implemented already took care of those words.
-- Added a function from Phrasal that normalized sentences. This feature allows NovaBot to recognize user input even if it contains special characters, apostrophes or extra spaces. It is just another feature to help NovaBot recognize more user inputs.
+- Wikipedia API: The Wikipedia API was implemented so that users can get more information on topics that interest them. This feature is initiated when the user types "Wikipedia:" or "wikipedia:" then their topic of choice
+- Wolfram API: The Wolfram Alpha API was implemented so that users can get responses on queries such as "What is the weather in India" or finding out detailed characteristics of stars by typing in the star's name. Wolfram can also be used for conversion between units and calculations when users are trying to comprehend measurements given NovaBot. This feature is initiated when the user types "Wolfram:" or "wolfram:" then their query
+- NASA API: The NASA API was implemented to allow users to view the Picture of the Day. NASA's Pictures of the Day are astronomical images that are specifically chosen daily to showcase the beauty of the universe. This API helped incorporate a visual element to the NovaBot that helps with the learning experience 
