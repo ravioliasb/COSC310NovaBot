@@ -7,11 +7,11 @@ Nova is a chatbot that is passionate about teaching astronomy and geography to u
 
 # Software Development Life Cycle
 
-We chose to use the incremental development life cycle. This life cycle is ideal because we would like to continuously gather user feedback and make corrective changes throughout development. As part of the agile process, we will also be participating in peer programming since we all have limited experience creating chatbots and want to support each other. Our incremental life cycle will include a project planning phase, a researching phase, a development phase, a review phase and then a presentation phase. We aim to develop a basic chatbot in the first major increment then develop a GUI for the chatbot in the second major increment. 
+We chose to use the incremental development life cycle. This life cycle was ideal because we wanted to continuously gather user feedback and make corrective changes throughout development. As part of the agile process, we participated in peer programming since we all had limited experience creating chatbots and wanted to support each other. Our incremental life cycle included a project planning phase, a researching phase, a development phase, a review phase and then a presentation phase. We created a basic chatbot in the first increment and created a GUI for the chatbot in the second increment. In this final increment, I worked on the chatbot alone and added Wikipedia, Wolfram Alpha and NASA APIs. 
 
 # How does Nova work?
 
-Nova was developed in python and uses natural language processing to understand and converse with the user. She takes the input from the user and cleans the sentences into a condensed and easily-readable format. She then compares the input to the questions she has in her questionbank and gives a response based on the similarity between the input and questionbank questions. All the questions and responses are found inside the corpus.txt file and may be expanded or changed as more astronomy or geography questions are thought of. 
+Nova was developed in python and uses natural language processing to understand and converse with the user. She takes the input from the user and cleans the sentences into a condensed and easily-readable format. She then compares the input to the questions she has in her questionbank and gives a response based on the similarity between the input and the questionbank questions. All the questions and responses are found inside the corpus.txt file and may be expanded or changed as more astronomy or geography questions are thought of. Also, Wikipedia, Wolfram Alpha and NASA APIs were implemented into the chatbot for more advanced users to find out more about topics that they are interested in. 
 
 # Software Design
 
@@ -111,6 +111,6 @@ You will need to download and install NLTK and Spacy in your python IDE before u
 
 # New Features 
 
-- **Wikipedia API:** The Wikipedia API was implemented so that users can get more information on topics that interest them. This feature is initiated when the user types "Wikipedia:" or "wikipedia:" then their topic of choice
+- **Wikipedia API:** The Wikipedia API was implemented so that users can get more information on topics that interest them. This feature is initiated when the user types "Wikipedia:" or "wikipedia:" then their topic of choice. When initiated, NovaBot will return a summary of the topic directly from the Wikipedia database. 
 - **Wolfram API:** The Wolfram Alpha API was implemented so that users can get responses on queries such as "What is the weather in India" or finding out detailed characteristics of stars by typing in the star's name. Wolfram can also be used for conversion between units and calculations when users are trying to comprehend measurements given NovaBot. This feature is initiated when the user types "Wolfram:" or "wolfram:" then their query
 - **NASA API:** The NASA API was implemented to allow users to view the Picture of the Day. NASA's Pictures of the Day are astronomical images that are specifically chosen daily to showcase the beauty of the universe. This API helped incorporate a visual element to the NovaBot that helps with the learning experience 
