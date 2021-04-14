@@ -11,7 +11,7 @@ We chose to use the incremental development life cycle. This life cycle was idea
 
 # How does Nova work?
 
-Nova was developed in python and uses natural language processing to understand and converse with the user. She takes the input from the user and cleans the sentences into a condensed and easily-readable format. She then compares the input to the questions she has in her questionbank and gives a response based on the similarity between the input and the questionbank questions. All the questions and responses are found inside the corpus.txt file and may be expanded or changed as more astronomy or geography questions are thought of. Also, Wikipedia, Wolfram Alpha and NASA APIs were implemented into the chatbot for more advanced users to find out more about topics that they are interested in. 
+Nova was developed in python and uses natural language processing to understand and converse with the user. She takes the input from the user and cleans the sentences into a condensed and easily-readable format. She then compares the input to the questions she has in her questionbank and gives a response based on the similarity between the input and the questionbank questions. All the questions and responses are found inside the corpus.txt file and may be expanded or changed as more astronomy or geography questions are thought of. Also, Wikipedia, Wolfram Alpha and NASA APIs were implemented into the chatbot for those who wish to delve more into the topics.
 
 # Software Design
 
@@ -107,7 +107,7 @@ You will need to download and install NLTK and Spacy in your python IDE before u
      Input: what is a megabyte?
      Nova: I do not understand your question
     ``` 
-- Preprocessing, such as spell checking, was not implemented for Wikipedia, Wolfram and NASA APIs since these features are meant for advanced users
+- Preprocessing, such as spell checking, was not implemented for Wikipedia, Wolfram and NASA APIs.
 
 # New Features 
 
